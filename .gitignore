@@ -1,0 +1,53 @@
+bin/
+.idea/
+build/
+gen/
+proguard/
+/.settings/org.eclipse.core.resources.prefs
+*/.DS_Store
+com_crashlytics_export_strings.xml
+
+atlassian-ide-plugin.xml
+
+
+/assets/crashlytics-build.properties
+/crashlytics.properties
+
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Windows thumbnail db
+.DS_Store
+
+# Eclipse project files
+.classpath
+.project
+
+# Android Studio
+.idea
+#.idea/workspace.xml - uncomment this and comment/delete .idea if it better suit your needs
+.gradle
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
+
+/*/build
+/build
+
+# keystore config
+release.properties
