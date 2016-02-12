@@ -1,0 +1,95 @@
+package com.github.dawidhyzy.kotlinsample;
+
+import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+@Generated("org.jsonschema2pojo")
+public class NasaResponse {
+
+@SerializedName("date")
+@Expose
+private String date;
+@SerializedName("url")
+@Expose
+private String url;
+@SerializedName("cloud_score")
+@Expose
+private Double cloudScore;
+@SerializedName("id")
+@Expose
+private String id;
+
+/**
+*
+* @return
+* The date
+*/
+public String getDate() {
+return date;
+}
+
+/**
+*
+* @param date
+* The date
+*/
+public void setDate(String date) {
+this.date = date;
+}
+
+/**
+*
+* @return
+* The url
+*/
+public String getUrl() {
+return url;
+}
+
+/**
+*
+* @param url
+* The url
+*/
+public void setUrl(String url) {
+this.url = url;
+}
+
+/**
+*
+* @return
+* The cloudScore
+*/
+public Double getCloudScore() {
+return cloudScore;
+}
+
+/**
+*
+* @param cloudScore
+* The cloud_score
+*/
+public void setCloudScore(Double cloudScore) {
+this.cloudScore = cloudScore;
+}
+
+/**
+*
+* @return
+* The id
+*/
+public String getId() {
+return id;
+}
+
+/**
+*
+* @param id
+* The id
+*/
+public void setId(String id) {
+this.id = id;
+}
+
+}
