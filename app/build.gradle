@@ -1,7 +1,7 @@
 buildscript {
     ext {
-        kotlin_version = '1.0.0'
-        anko_version = '0.8.2'
+        kotlin_version = '1.0.3'
+        anko_version = '0.8.3'
     }
     repositories {
         jcenter()
@@ -17,13 +17,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
 
     defaultConfig {
         applicationId "com.github.dawidhyzy.kotlinsample"
         minSdkVersion 21
-        targetSdkVersion 23
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
     }
@@ -40,9 +40,15 @@ android {
 }
 
 ext {
-    support_version = '23.1.1'
-    okhttpVersion = '3.0.1'
-    retrofitVersion = '2.0.0-beta3'
+    gson_version = '2.7'
+    okhttp_version = '3.4.1'
+    picasso_version = '2.5.2'
+    retrofit_version = '2.1.0'
+    rx_android_version = '1.2.1'
+    rx_java_version = '1.1.8'
+    rx_kotlin_version = '0.60.0'
+    support_version = '24.1.1'
+    timber_version = '4.1.2'
 }
 
 dependencies {
@@ -55,17 +61,17 @@ dependencies {
     compile "org.jetbrains.anko:anko-sdk21:$anko_version"
     compile "org.jetbrains.anko:anko-support-v4:$anko_version"
     /* Other */
-    compile 'com.google.code.gson:gson:2.5'
-    compile 'com.jakewharton.timber:timber:4.1.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile "com.squareup.okhttp3:okhttp:$okhttpVersion"
-    compile "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
-    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
-    compile "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion"
-    compile "com.squareup.retrofit2:converter-gson:$retrofitVersion"
-    compile 'io.reactivex:rxandroid:1.0.1'
-    compile 'io.reactivex:rxjava:1.1.0'
-    compile 'io.reactivex:rxkotlin:0.40.1'
+    compile "com.google.code.gson:gson:$gson_version"
+    compile "com.jakewharton.timber:timber:$timber_version"
+    compile "com.squareup.picasso:picasso:$picasso_version"
+    compile "com.squareup.okhttp3:okhttp:$okhttp_version"
+    compile "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+    compile "com.squareup.retrofit2:retrofit:$retrofit_version"
+    compile "com.squareup.retrofit2:adapter-rxjava:$retrofit_version"
+    compile "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    compile "io.reactivex:rxandroid:$rx_android_version"
+    compile "io.reactivex:rxjava:$rx_java_version"
+    compile "io.reactivex:rxkotlin:$rx_kotlin_version"
 
     testCompile 'junit:junit:4.12'
 
