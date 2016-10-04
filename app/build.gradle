@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        kotlin_version = '1.0.3'
+        kotlin_version = '1.0.4'
         anko_version = '0.8.3'
     }
     repositories {
@@ -15,10 +15,11 @@ buildscript {
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    buildToolsVersion "24.0.3"
 
     defaultConfig {
         applicationId "com.github.dawidhyzy.kotlinsample"
@@ -45,10 +46,10 @@ ext {
     picasso_version = '2.5.2'
     retrofit_version = '2.1.0'
     rx_android_version = '1.2.1'
-    rx_java_version = '1.1.8'
+    rx_java_version = '1.1.10'
     rx_kotlin_version = '0.60.0'
     support_version = '24.1.1'
-    timber_version = '4.1.2'
+    timber_version = '4.3.1'
 }
 
 dependencies {

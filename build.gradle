@@ -1,11 +1,16 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext {
+        androidPluginVersion = '2.2.0'
+        realmVersion = '1.2.0'
+    }
     repositories {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0-alpha6'
+        classpath "com.android.tools.build:gradle:$androidPluginVersion"
+        classpath "io.realm:realm-gradle-plugin:$realmVersion"
     }
 }
 
